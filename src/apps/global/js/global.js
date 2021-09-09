@@ -1,6 +1,8 @@
 import '../scss/global.scss';
+import '../../../utilities/utilities';
+
 import Header from '../../../components/header/header';
-import Footer from "../../../components/footer/footer";
+import Footer from '../../../components/footer/footer';
 
 class Global {
     constructor() {
