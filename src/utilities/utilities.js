@@ -23,6 +23,12 @@ class utilities {
 
         return result;
     }
+
+    async getModule(module) {
+        const result = await import(`./modules/${module}`);
+
+        return result.default || result;
+    }
 }
 
 new utilities();

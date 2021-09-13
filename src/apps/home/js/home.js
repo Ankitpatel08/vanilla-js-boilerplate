@@ -16,6 +16,13 @@ class Home {
             });
 
             console.log('post created--->', createdPost);
+
+            const domHelpers = await global.utilities.getModule('dom-helpers');
+
+            const headerEl = document.querySelector('header');
+
+            domHelpers.setAttribute(headerEl, 'data-test', 'header attr');
+            domHelpers.setStyle(headerEl.querySelector('.card'), 'background', 'lightblue');
         })();
     }
 }
